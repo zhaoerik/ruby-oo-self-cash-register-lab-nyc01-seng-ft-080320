@@ -11,11 +11,11 @@ class CashRegister
         @cart = []
     end
 
-    # def add_item(title, price, quantity = 1)
-    #     self.total = quantity * price
-    #     quantity.times do
+    def add_item(title, price, quantity = 1)
+        self.total = quantity * price
+        quantity.times do
 
-    # end
+    end
 
     def apply_discount
         new_total = @total * (100-discount)/100
