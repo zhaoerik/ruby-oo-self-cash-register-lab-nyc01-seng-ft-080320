@@ -15,7 +15,7 @@ class CashRegister
     end
     
     def apply_discount
-        if self.discount != 0
+        if discount != 0
             self.total = total * ((100-discount.to_f)/100).to_i
             "After the discount, the total comes to $#{@total}."
         else
