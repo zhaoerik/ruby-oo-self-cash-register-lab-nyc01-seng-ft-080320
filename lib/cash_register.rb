@@ -11,7 +11,8 @@ class CashRegister
     end
     
     def add_item(title, price, quantity = 1)
-
+        self.total += price * quantity
+        self.cart.push(title)
     end
 end
 
