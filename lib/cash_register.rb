@@ -1,4 +1,3 @@
-
 require 'pry'
 
 class CashRegister
@@ -11,26 +10,27 @@ class CashRegister
         @cart = []
     end
 
-    def add_item(title, price, quantity = 1)
-        self.total = quantity * price
-        quantity.times do
+    # def add_item(title, price, quantity = 1)
+    #     self.total = quantity * price
+    #     quantity.times do
+    # end
 
-    end
-
-    def apply_discount
-        new_total = @total * (100-discount)/100
-        @total = new_total
-        "After the discount, the total comes to $#{@total}."
-        if @discount == 0 
-            "There is no discount to apply."
-        end
-    end
-
-    def items
-        @cart
-    end
-
-    def void_last_transaction
-        @cart.shift
-    end
+    
 end
+
+# def apply_discount
+#     new_total = @total * (100-discount)/100
+#     @total = new_total
+#     "After the discount, the total comes to $#{@total}."
+#     if @discount == 0 
+#         "There is no discount to apply."
+#     end
+# end
+
+# def items
+#     @cart
+# end
+
+# def void_last_transaction
+#     @cart.shift
+# end
