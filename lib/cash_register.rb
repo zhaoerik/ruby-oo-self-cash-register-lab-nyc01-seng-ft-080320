@@ -9,13 +9,6 @@ class CashRegister
         @discount = discount
         @cart = []
     end
-
-    # def add_item(title, price, quantity = 1)
-    #     self.total = quantity * price
-    #     quantity.times do
-    # end
-
-    
 end
 
 # def apply_discount
