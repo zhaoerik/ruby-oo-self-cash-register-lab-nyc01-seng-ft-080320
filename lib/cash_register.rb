@@ -16,7 +16,7 @@ class CashRegister
 
     def add_item(title, price, quantity = 1)
         self.total += price * quantity
-        @cart.push(title)
+        @remember_price = price * quantity
     end
 
     # def apply_discount
